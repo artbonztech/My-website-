@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Registration | Artbonz Technologies</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#0056d6,#00a8ff);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+min-height:100vh;
+
+padding:40px 15px;
+
+}
+
+.register-container{
+
+background:#fff;
+
+width:500px;
+
+max-width:100%;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.2);
+
+animation:fadeIn .8s;
+
+}
+
+.logo{
+
+display:block;
+
+width:90px;
+
+margin:0 auto 15px;
+
+}
+
+.register-container h2{
+
+text-align:center;
+
+color:#0056d6;
+
+margin-bottom:10px;
+
+}
+
+.register-container p{
+
+text-align:center;
+
+color:#666;
+
+margin-bottom:30px;
+
+}
+
+.input-group{
+
+position:relative;
+
+margin-bottom:18px;
+
+}
+
+.input-group i{
+
+position:absolute;
+
+left:15px;
+
+top:16px;
+
+color:#777;
+
+}
+
+.input-group input,
+
+.input-group select{
+
+width:100%;
+
+padding:14px 14px 14px 45px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+.input-group input:focus,
+
+.input-group select:focus{
+
+border-color:#0056d6;
+
+}
+
+.register-btn{
+
+width:100%;
+
+padding:15px;
+
+background:#0056d6;
+
+color:#fff;
+
+border:none;
+
+border-radius:10px;
+
+font-size:17px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.register-btn:hover{
+
+background:#003fa3;
+
+}
+
+.bottom-links{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:20px;
+
+font-size:14px;
+
+}
+
+.bottom-links a{
+
+text-decoration:none;
+
+color:#0056d6;
+
+}
+
+.back-home{
+
+text-align:center;
+
+margin-top:20px;
+
+}
+
+.back-home a{
+
+text-decoration:none;
+
+color:#333;
+
+font-weight:bold;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="register-container">
+
+<img src="Images/logo.png" class="logo" alt="Artbonz Technologies Logo">
+
+<h2>Create Student Account</h2>
+
+<p>Register to access your learning dashboard.</p>
+
+<form action="register.php" method="POST">
+
+<div class="input-group">
+
+<i class="fas fa-user"></i>
+
+<input
+type="text"
+name="fullname"
+placeholder="Full Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<i class="fas fa-envelope"></i>
+
+<input
+type="email"
+name="email"
+placeholder="Email Address"
+required>
+
+</div>
+
+<div class="input-group">
+
+<i class="fas fa-phone"></i>
+
+<input
+type="tel"
+name="phone"
+placeholder="Phone Number"
+required>
+
+</div>
+
+<div class="input-group">
+
+<i class="fas fa-graduation-cap"></i>
+
+<select name="course" required>
+
+<option value="">Select Course</option>
+
+<option>Computer Packages</option>
+
+<option>Web Development</option>
+
+<option>Graphic Design</option>
+
+<option>Networking</option>
+
+<option>Cyber Security</option>
+
+<option>Data Analysis</option>
+
+<option>Digital Marketing</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<i class="fas fa-lock"></i>
+
+<input
+type="password"
+name="password"
+placeholder="Create Password"
+required>
+
+</div>
+
+<div class="input-group">
+
+<i class="fas fa-lock"></i>
+
+<input
+type="password"
+name="confirm_password"
+placeholder="Confirm Password"
+required>
+
+</div>
+
+<button
+type="submit"
+class="register-btn">
+
+<i class="fas fa-user-plus"></i>
+
+Create Account
+
+</button>
+
+</form>
+
+<div class="bottom-links">
+
+<a href="login.html">
+
+Already have an account?
+
+</a>
+
+<a href="forgot-password.html">
+
+Forgot Password?
+
+</a>
+
+</div>
+
+<div class="back-home">
+
+<a href="index.html">
+
+<i class="fas fa-arrow-left"></i>
+
+Back to Home
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
